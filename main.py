@@ -13,7 +13,7 @@ def speak(text):
     engine.runAndWait()
     
 def aiProcess(command):
-    genai.configure(api_key="AIzaSyCsdrQGTzNlE836YFZRXa573ccGKBoDGvE")
+    genai.configure(api_key="")
 
     model = genai.GenerativeModel('gemini-1.5-flash')
     response = model.generate_content(command)
